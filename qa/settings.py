@@ -1,98 +1,88 @@
-from configurations import Configuration
-
 
 import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+SECRET_KEY = '6f%a60okro#zrx#_^drnci2864(j@t@*ii_^91@7j0q5ib9di*'
+
+DEBUG = False
+
+ALLOWED_HOSTS = []
 
 
-class Base(Configuration):
+INSTALLED_APPS = [
+'django.contrib.admin',
+'django.contrib.auth',
+'django.contrib.contenttypes',
+'django.contrib.sessions',
+'django.contrib.messages',
+'django.contrib.staticfiles',
+'configurations',
+'question',
+]
 
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MIDDLEWARE = [
+'django.middleware.security.SecurityMiddleware',
+'django.contrib.sessions.middleware.SessionMiddleware',
+'django.middleware.common.CommonMiddleware',
+'django.middleware.csrf.CsrfViewMiddleware',
+'django.contrib.auth.middleware.AuthenticationMiddleware',
+'django.contrib.messages.middleware.MessageMiddleware',
+'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
 
-    SECRET_KEY = '6f%a60okro#zrx#_^drnci2864(j@t@*ii_^91@7j0q5ib9di*'
+ROOT_URLCONF = 'qa.urls'
 
-    DEBUG = False
+TEMPLATES = [
+{
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'DIRS': [],
+    'APP_DIRS': True,
+    'OPTIONS': {
+        'context_processors': [
+            'django.template.context_processors.debug',
+            'django.template.context_processors.request',
+            'django.contrib.auth.context_processors.auth',
+            'django.contrib.messages.context_processors.messages',
+        ],
+    },
+},
+]
 
-    ALLOWED_HOSTS = []
+WSGI_APPLICATION = 'qa.wsgi.application'
 
-
-    INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'configurations',
-    'question',
-    ]
-
-    MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    ]
-
-    ROOT_URLCONF = 'qa.urls'
-
-    TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
+            'read_default_file': './db.cnf',
         },
-    },
-    ]
-
-    WSGI_APPLICATION = 'qa.wsgi.application'
-
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'OPTIONS': {
-                'read_default_file': './db.cnf',
-            },
-        }
     }
+}
 
-    AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-    ]
+AUTH_PASSWORD_VALIDATORS = [
+{
+    'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+},
+{
+    'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+},
+{
+    'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+},
+{
+    'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+},
+]
 
 
-    LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'ru-RU'
 
-    TIME_ZONE = 'Europe/Moscow'
+TIME_ZONE = 'Europe/Moscow'
 
-    USE_I18N = True
+USE_I18N = True
 
-    USE_L10N = True
+USE_L10N = True
 
-    USE_TZ = True
+USE_TZ = True
 
-    STATIC_URL = '/static/'
-
-class Dev(Base):
-
-    DEBUG = True
+STATIC_URL = '/static/'
