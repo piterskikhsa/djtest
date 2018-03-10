@@ -31,7 +31,7 @@ MIDDLEWARE = [
 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'quest.urls'
+ROOT_URLCONF = 'ask.urls'
 
 TEMPLATES = [
 {
@@ -49,7 +49,7 @@ TEMPLATES = [
 },
 ]
 
-WSGI_APPLICATION = 'quest.wsgi.application'
+WSGI_APPLICATION = 'ask.wsgi.application'
 
 DATABASES = {
     'default': {
