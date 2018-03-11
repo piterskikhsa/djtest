@@ -1,0 +1,168 @@
+[
+  {
+    "model": "qa.question" ,
+    "pk": 14 ,
+    "fields": {
+      "title": "If you are adding values" ,
+      "text": "If you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table. The INSERT INTO syntax would be as follows:" ,
+      "added_at": "2018-03-08T12:26:36.012Z" ,
+      "rating": 1 ,
+      "author": 1 ,
+      "likes": [
+        1
+      ]
+    }
+  } ,
+  {
+    "model": "qa.question" ,
+    "pk": 15 ,
+    "fields": {
+      "title": "Insert Data Only in Specified Columns" ,
+      "text": "It is also possible to only insert data in specific columns. \n The following SQL statement will insert a new record, but only insert data in the \"CustomerName\", \"City\", and \"Country\" columns (CustomerID will be updated automatically):" ,
+      "added_at": "2018-03-09T12:32:13.949Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  } ,
+  {
+    "model": "qa.question" ,
+    "pk": 16 ,
+    "fields": {
+      "title": "What is a NULL Value?" ,
+      "text": "A field with a NULL value is a field with no value." ,
+      "added_at": "2018-03-11T12:32:37.766Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  } ,
+  {
+    "model": "qa.question" ,
+    "pk": 17 ,
+    "fields": {
+      "title": "How to Test for NULL Values?" ,
+      "text": "It is not possible to test for NULL values with comparison operators, such as =, <, or <>." ,
+      "added_at": "2018-03-11T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  } ,
+  {
+    "model": "qa.question" ,
+    "pk": 5 ,
+    "fields": {
+      "title": "Demo Database" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-02-23T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 6 ,
+    "fields": {
+      "title": "\u0412\u043e\u043f\u0440\u043e\u0441 1213567" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-01-22T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 7 ,
+    "fields": {
+      "title": "\u0412\u043e 1213567" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-01-21T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 8 ,
+    "fields": {
+      "title": "\u0412\u043e\u043f\u0440127" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-02-07T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 9 ,
+    "fields": {
+      "title": "\u0412\u043e\u043f\u0440\u043e\u0441 1213567" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-02-16T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 10 ,
+    "fields": {
+      "title": "S NULL operator to list all persons  1213567" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-02-13T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 11 ,
+    "fields": {
+      "title": "S NULL operator to list all persons " ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-01-01T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 12 ,
+    "fields": {
+      "title": "\u0412\u043e\u043f\u0440\u043e\u0441 12111111111111111113567" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-01-11T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+  ,
+  {
+    "model": "qa.question" ,
+    "pk": 13 ,
+    "fields": {
+      "title": "\u0412\u043e\u043f\u0440\u043e\u0441 0000000000000000000" ,
+      "text": "The following SQL statement uses the IS NULL operator to list all persons that have no address:" ,
+      "added_at": "2018-02-11T12:32:52.589Z" ,
+      "rating": 0 ,
+      "author": 1 ,
+      "likes": [ ]
+    }
+  }
+]

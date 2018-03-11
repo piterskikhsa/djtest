@@ -1,4 +1,3 @@
-
 import os
 
 
@@ -9,7 +8,6 @@ SECRET_KEY = '6f%a60okro#zrx#_^drnci2864(j@t@*ii_^91@7j0q5ib9di*'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 INSTALLED_APPS = [
 'django.contrib.admin',
@@ -36,7 +34,7 @@ ROOT_URLCONF = 'ask.urls'
 TEMPLATES = [
 {
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [],
+    'DIRS': ['qa/template'],
     'APP_DIRS': True,
     'OPTIONS': {
         'context_processors': [
@@ -75,7 +73,6 @@ AUTH_PASSWORD_VALIDATORS = [
 },
 ]
 
-
 LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'Europe/Moscow'
@@ -87,4 +84,3 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-
